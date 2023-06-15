@@ -45,6 +45,9 @@
         <li>
           <a href="#aboutme">About me</a>
         </li>
+        <li>
+          <a href="#contactme">Contact Me</a>
+        </li>
       </ul>
     </nav>
     <section id="HTMLCourseContent">
@@ -248,6 +251,69 @@
         To know more about me, click here &gt;&gt;&gt;
         <a href="about.html" target="_blank"> About me</a>
       </p>
+    </section>
+    <hr />
+    <section id="contactme">
+      <h3>Contact Me</h3>
+      <form action="https://httpbin.org/get" method="get">
+        <p>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Your Name"
+            autocomplete="on"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="lasstName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Your Name"
+            autocomplete="on"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Your secret"
+            required
+          />
+        </p>
+        <p>
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="0123456789"
+            pattern="[01]{2}[2345]{4}[6789]{4}"
+            requuired
+          />
+        </p>
+        <p>
+          <label for="birthYear">Birth Year</label>
+          <input
+            type="number"
+            name="birthYear"
+            id="birthYear"
+            min="1980"
+            max="2023"
+            step="1"
+            value="1980"
+          />
+        </p>
+      </form>
     </section>
   </body>
 </html>
