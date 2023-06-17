@@ -255,9 +255,9 @@
     <hr />
     <section id="contactme">
       <h3>Contact Me</h3>
-      <form action="https://httpbin.org/get" method="get">
+      <form action="https:httpbin.org/get" method="get">
         <p>
-          <label for="firstName">First Name</label>
+          <label for="firstName">First Name :</label>
           <input
             type="text"
             name="firstName"
@@ -267,9 +267,8 @@
             required
           />
         </p>
-
         <p>
-          <label for="lasstName">Last Name</label>
+          <label for="lastName">Last Name :</label>
           <input
             type="text"
             name="lastName"
@@ -279,40 +278,98 @@
             required
           />
         </p>
-
         <p>
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Your secret"
-            required
-          />
-        </p>
-        <p>
-          <label for="phone">Phone Number</label>
+          <label for="phone">Phone Number :</label>
           <input
             type="tel"
             name="phone"
             id="phone"
-            placeholder="0123456789"
-            pattern="[01]{2}[2345]{4}[6789]{4}"
-            requuired
+            placeholder="1234567890"
+            pattern="[12]{2}[3456]{4}[7890]{4}"
+            required
           />
         </p>
         <p>
-          <label for="birthYear">Birth Year</label>
+          <label for="birthYear">Birth Year :</label>
           <input
             type="number"
             name="birthYear"
             id="birthYear"
-            min="1980"
-            max="2023"
             step="1"
-            value="1980"
+            max="2023"
+            min="1980"
+            required
+            value="2000"
           />
         </p>
+        <p>
+          <label for="coffee">Favourite Coffee :</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list" />
+          <datalist id="coffee-list">
+            <option value="Expresso"></option>
+            <option value="Regular"></option>
+            <option value="" WhiteMocha></option>
+            <option value="IceCoffee"></option>
+            <option value="Cappuccino"></option>
+            <option value="Americano"></option>
+            <option value="Cortado"></option>
+            <option value="latte"></option>
+          </datalist>
+        </p>
+        <br />
+        <fieldset>
+          <legend>Favourite Food</legend>
+          <p>
+            <input type="radio" name="food" id="biriyani" value="Biriyani" />
+            <label for="biriyani">Biriyani</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="pizza" value="pizza" />
+            <label for="pizza">Pizza</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="food"
+              id="paneertikka"
+              value="paneertikka"
+            />
+            <label for="paneertikka">Paneer Tikka</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="food"
+              id="butterchicken"
+              value="butterchicken"
+            />
+            <label for="butterchicken">Butter Chicken</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="Shwarma" value="shwarma" />
+            <label for="shwarma">Shwarma</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="Fahem" value="Fahem" />
+            <label for="Fahem">Fahem</label>
+          </p>
+          <p>
+            <input type="radio" name="food" id="other" value="other" />
+            <label for="other">Other</label>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Do You Have Pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="pets" value="dog" />
+            <label for="pets">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="pets" value="cat" />
+            <label for="pets">Cat</label>
+          </p>
+        </fieldset>
       </form>
     </section>
   </body>
