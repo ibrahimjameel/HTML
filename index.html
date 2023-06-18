@@ -255,7 +255,7 @@
     <hr />
     <section id="contactme">
       <h3>Contact Me</h3>
-      <form action="https:httpbin.org/get" method="get">
+      <form action="https://httpbin.org/forms/post" method="post">
         <p>
           <label for="firstName">First Name :</label>
           <input
@@ -303,18 +303,22 @@
           />
         </p>
         <p>
-          <label for="coffee">Favourite Coffee :</label>
-          <input type="text" name="coffee" id="coffee" list="coffee-list" />
-          <datalist id="coffee-list">
-            <option value="Expresso"></option>
-            <option value="Regular"></option>
-            <option value="" WhiteMocha></option>
-            <option value="IceCoffee"></option>
-            <option value="Cappuccino"></option>
-            <option value="Americano"></option>
-            <option value="Cortado"></option>
-            <option value="latte"></option>
-          </datalist>
+          <label for="drink">Favourite Drink :</label>
+          <select name="drink" id="drink" multiple size="9">
+            <optgroup label="Coffee">
+              <option value="regular coffee">Regular Coffee</option>
+              <option value="latte">Latte</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="ice coffee">Ice Coffee</option>
+              <option value="cortado">Cortado</option>
+              <option value="expresso" selected>Expresso</option>
+            </optgroup>
+            <optgroup label="Cold Drinks">
+              <option value="7up">7 Up</option>
+              <option value="pepsi">Pepsi</option>
+              <option value="cola">Cola</option>
+            </optgroup>
+          </select>
         </p>
         <br />
         <fieldset>
@@ -347,7 +351,7 @@
           </p>
           <p>
             <input type="radio" name="food" id="Shwarma" value="shwarma" />
-            <label for="shwarma">Shwarma</label>
+            <label for="Shwarma">Shwarma</label>
           </p>
           <p>
             <input type="radio" name="food" id="Fahem" value="Fahem" />
@@ -366,9 +370,30 @@
             <label for="pets">Dog</label>
           </p>
           <p>
-            <input type="checkbox" name="pets" id="pets" value="cat" />
+            <input type="checkbox" name="pets" id="Pets" value="cat" />
             <label for="pets">Cat</label>
           </p>
+        </fieldset>
+        <fieldset>
+          <legend>Feedback</legend>
+          <label for="message">Your Feedback</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Type your feedback here"
+          ></textarea>
+          <br />
+
+          <button
+            type="button"
+            formaction="https://httpbin.org/forms/post"
+            formmethod="post"
+          >
+            Post
+          </button>
         </fieldset>
       </form>
     </section>
