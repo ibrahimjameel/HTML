@@ -1,6 +1,32 @@
-html
+html {
+    background-color: papayawhip;
+}
+
+h1 {
+color: #18020c; 
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 250%;
+}
+
+h2 {
+    color: #18020C
+}
+
+aside {
+    color:#18020C ; 
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #A5402D
+}
+
 table, tr, th, td, caption {
     border: 1px solid #000000;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
     padding: 0.5rem;}
+
+.Copy {
+    color: #18020C ;
+}
+

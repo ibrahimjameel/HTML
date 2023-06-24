@@ -1,0 +1,50 @@
+@font-face {
+    font-family: head;
+    src: url(static/Raleway-Bold.ttf);
+}
+h1 {
+    font-family: head;
+    color: #18020c;
+    text-align: center;
+}
+@font-face {
+    font-family: caption;
+    src: url(static/Raleway-Italic.ttf);
+}
+.Store {
+font-family: caption;
+font-size: 80%;
+color: #18020c;
+}
+@font-face {
+    font-family: para;
+    src: url(static/Raleway-SemiBold.ttf);
+}
+p {
+    color: #A5402D;
+    font-family: para;
+}
+
+@font-face {
+    font-family: timing;
+    src: url(static/Raleway-MediumItalic.ttf);
+}
+
+
+dl {
+    line-height: 175%;
+}
+
+dt {
+    font-family:timing ;
+    color: #461600;
+}
+
+dd {
+    font-family: timing;
+    color: #461600;
+}
+
+.copy {
+    color: black;
+}
