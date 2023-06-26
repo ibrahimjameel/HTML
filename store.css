@@ -20,9 +20,34 @@ color: #18020c;
     font-family: para;
     src: url(static/Raleway-SemiBold.ttf);
 }
+
+@font-face {
+    font-family: link;
+    src: url(static/Raleway-Regular.ttf);
+}
+ul {
+    color: #461600;
+}
+
+a { 
+font-family: link;
+color: #A5402D;
+text-decoration-line: none ;
+
+}
+
+a:hover {
+    color:#4d6ec7;
+}
+a:focus {
+    color:#18020c;
+}
 p {
     color: #A5402D;
     font-family: para;
+    text-transform: inherit;
+    text-justify: kashida
+    ;
 }
 
 @font-face {
