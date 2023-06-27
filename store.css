@@ -28,7 +28,12 @@ color: #18020c;
 ul {
     color: #461600;
 }
-
+img {
+    padding-left:  25px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
 a { 
 font-family: link;
 color: #A5402D;
