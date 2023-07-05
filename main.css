@@ -6,11 +6,31 @@ h1 {
 color: #18020c; 
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 250%;
+text-align: center;
+}
+
+figure {
+    float:right;
+    padding-left: 10px;
+}
+
+img {
+    border-radius: 7px;
+}
+main {
+    margin: 75px;
 }
 
 h2 {
     color: #18020C
 }
+
+{
+    float: right;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
 
 aside {
     color:#18020C ; 
@@ -30,3 +50,20 @@ table, tr, th, td, caption {
     color: #18020C ;
 }
 
+ul {
+    text-align: center;
+    list-style-type: none;
+    
+ 
+    
+}
+
+li {
+    display: inline-block;
+    margin-inline: 10px;
+    
+} 
+ 
+li a {
+ text-decoration: none;
+}
